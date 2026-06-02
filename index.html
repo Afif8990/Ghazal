@@ -147,8 +147,7 @@
         <div id="step7" class="hidden">
             <div class="card"><img class="kitty-img" src="https://i.ibb.co/kgQpfjMz/7cc8583699fabfe8439e6aa3979c41f9.jpg"></div>
             <button class="btn btn-dark">😊 اذا تحبين عفيف دوسي على القلب</button>
-            <div class="big-heart" onclick="alert('وأنا كمان بحبك يا غزل ♥️')">♥</div>
-        </div>
+            <div class="big-heart" class="big-heart" onclick="showLove()"> ❤️ </button>
     </div>
     <script>
         // انشاء قلوب متحركة باستمرار
@@ -178,7 +177,19 @@
                 document.getElementById('step'+i).classList.add('hidden')
             }
             document.getElementById('step'+s).classList.remove('hidden')
-        }
+    
+        <!-- رسالة الحب الجديدة -->
+<div id="رسالة-الحب" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#ff69b4; color:white; padding:25px; border-radius:20px; font-size:26px; z-index:9999; text-align:center; box-shadow:0 0 30px hotpink;">
+    وأنا كمان بحبك يا غزل ❤️
+    <br><br>
+    <button onclick="document.getElementById('رسالة-الحب').style.display='none'" style="background:white; color:#ff1493; border:none; padding:12px 25px; border-radius:15px; font-size:20px; font-weight:bold;">حسناً</button>
+</div>
+
+<script>
+function showLove() {
+    document.getElementById('رسالة-الحب').style.display = 'block';
+}
+</script>}
     </script>
 </body>
 </html>
